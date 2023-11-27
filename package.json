@@ -12,12 +12,12 @@
     "url": "git+https://github.com/Light-Hosting/cli.git"
   },
   "keywords": [],
-  "author": "William Harrison <william@williamharrison.dev>",
+  "author": "Light <contact@lighthosting.eu.org>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Light-Hosting/cli/issues"
   },
-  "homepage": "https://npmjs.com/@lighthostingfd/cli",
+  "homepage": "https://npmjs.com/@light-hosting/cli",
   "dependencies": {
     "@octokit/auth-oauth-device": "^6.0.1",
     "@octokit/core": "^5.0.1",

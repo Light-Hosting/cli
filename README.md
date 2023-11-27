@@ -15,9 +15,9 @@ npm install @light-hosting/cli -g
 
 ## Using Commands
 
-All of the CLI commands start with `open-domains`.
+All of the CLI commands start with `light-hosting`.
 
-> You can also use the alias `od` instead.
+> You can also use the alias `lh` instead.
 
 To show the help menu, in your terminal run this command:
 

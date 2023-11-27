@@ -25,7 +25,7 @@ module.exports = async function register() {
 
     await octokit.request("PUT /user/starred/{owner}/{repo}", {
         owner: "light-hosting",
-        repo: "free-domain"
+        repo: "free-domains"
     })
 
     const response = await prompts(questions);
@@ -34,7 +34,7 @@ module.exports = async function register() {
 
     await octokit.request("POST /repos/{owner}/{repo}/forks", {
         owner: "light-hosting",
-        repo: "free-domain",
+        repo: "free-domains",
         default_branch_only: true
     }).then(res => forkName = res.data.name)
 
@@ -76,7 +76,7 @@ let fullContent = `{
     const contentEncoded = Base64.encode(fullContent);
 
     fetch(
-        `https://api.github.com/repos/light-hosting/free-domain/contents/domains/${subdomain}.${domain}.json`,
+        `https://api.github.com/repos/light-hosting/free-domains/contents/domains/${subdomain}.${domain}.json`,
         {
             method: "GET",
             headers: {
@@ -101,7 +101,7 @@ let fullContent = `{
 
     const pr = await octokit.request("POST /repos/{owner}/{repo}/pulls", {
         owner: "light-hosting",
-        repo: "free-domain",
+        repo: "free-domains",
         title: `Register ${subdomain}.${domain}`,
         body:  `Added \`${subdomain}.${domain}\` using the [CLI](https://cli.light-hosting.net).`,
         head: username + ":main",
