@@ -1,14 +1,14 @@
-# Open Domains CLI
-Register free subdomains with Open Domains from your command line.
+# Light Hosting CLI
+Register free subdomains with Light Hosting from your command line.
 
 ## Getting Started
 
-Using the Open Domains CLI is easy!
+Using the Light Hosting CLI is easy!
 
 All you need to do is run the following command:
 
 ```bash
-npm install @open-domains/cli -g
+npm install @light-hosting/cli -g
 ```
 
 ...and that's it!
@@ -22,7 +22,7 @@ All of the CLI commands start with `open-domains`.
 To show the help menu, in your terminal run this command:
 
 ```bash
-open-domains help
+light-hosting help
 ```
 
 ### Debugging
@@ -32,7 +32,7 @@ If you are having issues using the CLI, follow these simple steps:
 1. Run the debug command
 
 ```bash
-open-domains debug
+light-hosting debug
 ```
 
 2. Open an issue
